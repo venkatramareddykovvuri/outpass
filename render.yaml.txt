@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: hostel-outpass
+    env: python
+    buildCommand: ""
+    startCommand: python server.py

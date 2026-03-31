@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aditya University Outpass</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background Image -->
+<div class="bg"></div>
+
+<!-- Logo -->
+<img src="logo.png" class="logo">
+
+<h1>Aditya University Hostel Outpass System</h1>
+
+<div class="container">
+    <h2>Student Login</h2>
+
+    <input type="text" id="rollno" placeholder="Roll Number"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+
+    <select id="type">
+        <option value="home">Home Outpass</option>
+        <option value="normal">Normal Outpass</option>
+    </select><br>
+
+    <textarea id="reason" placeholder="Reason"></textarea><br>
+    <input type="date" id="date"><br>
+    <input type="time" id="time"><br>
+
+    <button onclick="generateOTP()">Generate OTP</button>
+</div>
+
+<div class="container">
+    <h2>Warden Login</h2>
+
+<div class="container">
+    <input type="text" id="wardenUser" placeholder="Username"><br>
+    <input type="password" id="wardenPass" placeholder="Password"><br>
+
+    <button onclick="wardenLogin()">Login</button>
+</div>
+    <h2>Warden Verification</h2>
+
+    <input type="text" id="verifyRoll" placeholder="Roll Number"><br>
+    <input type="text" id="otp" placeholder="Enter OTP"><br>
+
+    <button onclick="verifyOTP()">Verify OTP</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

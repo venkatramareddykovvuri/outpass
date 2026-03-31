@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Outpass</title>
+</head>
+<body onload="loadData()">
+
+<h1>Aditya University</h1>
+<h2>Hostel Outpass</h2>
+
+<p id="data"></p>
+
+<button onclick="window.print()">Print</button>
+
+<script>
+function loadData() {
+    let data = localStorage.getItem("outpass");
+    document.getElementById("data").innerHTML = data;
+}
+</script>
+
+</body>
+</html>
